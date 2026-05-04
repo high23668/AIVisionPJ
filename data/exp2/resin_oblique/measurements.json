@@ -1,0 +1,10 @@
+{
+  "scene": "resin_oblique",
+  "camera_to_object_front_mm": 165,
+  "object_thickness_mm": 0.1,
+  "object_to_wall_mm": 245,
+  "object_tilt_deg": 30,
+  "paper_color": "blue",
+  "gt_z_center_mm": 175.0333458185196,
+  "notes": "resin sheet 70x100x0.1mm; stand notched; workpiece tilted 30deg toward camera"
+}

@@ -1,0 +1,10 @@
+{
+  "scene": "glass_oblique",
+  "camera_to_object_front_mm": 385,
+  "object_thickness_mm": 2.5,
+  "object_to_wall_mm": 168,
+  "object_tilt_deg": 30,
+  "paper_color": "blue",
+  "gt_z_center_mm": 376.9500255584717,
+  "notes": "stand notched; workpiece tilted 30deg toward camera"
+}

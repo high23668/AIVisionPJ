@@ -1,0 +1,33 @@
+[project]
+name = "aivisionpj"
+version = "0.1.0"
+description = "YOLO26 / DINOv3 / FoundationPose / Qwen3-VL implementation and robotics perception pipeline"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.6.0",
+    "torchvision>=0.21.0",
+    "torchaudio>=2.6.0",
+    "ultralytics>=8.4.0",
+    "transformers>=5.0.0",
+    "accelerate",
+    "huggingface-hub",
+    "numpy",
+    "pillow",
+    "opencv-python",
+    "matplotlib",
+    "tqdm",
+    "scipy",
+    "scikit-learn",
+]
+
+[tool.uv]
+index-url = "https://pypi.org/simple"
+
+[[tool.uv.index]]
+url = "https://download.pytorch.org/whl/cu124"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "https://download.pytorch.org/whl/cu124" }
+torchvision = { index = "https://download.pytorch.org/whl/cu124" }
+torchaudio = { index = "https://download.pytorch.org/whl/cu124" }

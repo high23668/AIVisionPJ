@@ -1,0 +1,10 @@
+{
+  "scene": "resin_front",
+  "camera_to_object_front_mm": 165,
+  "object_thickness_mm": 0.1,
+  "object_to_wall_mm": 245,
+  "object_tilt_deg": 0,
+  "paper_color": "blue",
+  "gt_z_center_mm": 163.00000250339508,
+  "notes": "resin sheet 70x100x0.1mm; stand notched; closer position for better framing"
+}

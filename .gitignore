@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.cache/
+*.egg-info/
+
+# Virtual environments
+.venv/
+.venv_*/
+*/.venv/
+
+# Model weights / large binaries
+*.pt
+*.pth
+*.onnx
+*.engine
+*.safetensors
+*.bin
+*.pkl
+*.tar
+*.tar.gz
+*.zip
+
+# Large data files
+*.npy
+*.npz
+*.glb
+*.ply
+*.obj
+!data/glassboard_cad/*.obj
+!data/glassboard_cad/*.ply
+
+# Results subdirectories (large image/depth data)
+results/*/
+
+# Training runs (YOLO output)
+runs/
+
+# Data directories with large sensor data
+data/realsense*/
+data/fp_scene/
+data/sample_images/*
+data/sample_depth/*
+!data/sample_images/.gitkeep
+!data/sample_depth/.gitkeep
+
+# PDF (レポートは .md で管理)
+*.pdf
+
+# Root-level model files
+yolo26l.pt
+yolov8l.pt
+yolo26n.pt
+yolo26n-pose.pt
+yolo26n-seg.pt
+
+# Misc
+*.log
+*.tmp
