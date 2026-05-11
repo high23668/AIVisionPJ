@@ -1,0 +1,80 @@
+{
+  "qwen": {
+    "glass_front": {
+      "scene": "glass_front",
+      "model": "qwen3-vl-4b",
+      "infer_sec_vqa": 14.083,
+      "infer_sec_grounding": 13.08,
+      "response": "1. Yes, there is a transparent glass plate visible, standing upright on the floor.  \n2. No, there is no transparent plastic or resin sheet visible.  \n3. The only transparent object visible is a clear glass plate or stand.",
+      "grounding_raw": "[{\"label\": \"transparent objects (glass plate or plastic sheet)\", \"bbox\": [373, 420, 750, 945]}]",
+      "boxes": [
+        {
+          "label": "transparent objects (glass plate or plastic sheet)",
+          "bbox": [
+            238,
+            201,
+            480,
+            453
+          ]
+        }
+      ]
+    },
+    "glass_oblique": {
+      "scene": "glass_oblique",
+      "model": "qwen3-vl-4b",
+      "infer_sec_vqa": 14.141,
+      "infer_sec_grounding": 13.526,
+      "response": "1. Yes, there is a transparent glass plate visible, standing upright on the floor.  \n2. No, there is no transparent plastic or resin sheet visible.  \n3. The only transparent objects visible are the glass plate and its two small, clear supports.",
+      "grounding_raw": "[{\"label\": \"transparent objects (glass plate or plastic sheet)\", \"bbox\": [375, 426, 717, 975]}]",
+      "boxes": [
+        {
+          "label": "transparent objects (glass plate or plastic sheet)",
+          "bbox": [
+            240,
+            204,
+            458,
+            468
+          ]
+        }
+      ]
+    },
+    "resin_front": {
+      "scene": "resin_front",
+      "model": "qwen3-vl-4b",
+      "infer_sec_vqa": 14.635,
+      "infer_sec_grounding": 13.225,
+      "response": "1. Yes, a transparent glass plate is visible, showing reflections and a blurred background.  \n2. No, there is no transparent plastic or resin sheet visible.  \n3. The only transparent object visible is a glass plate, which reflects light and shows a blurred background.",
+      "grounding_raw": "[{\"label\": \"transparent objects (glass plate or plastic sheet)\", \"bbox\": [0, 0, 1000, 658]}]",
+      "boxes": [
+        {
+          "label": "transparent objects (glass plate or plastic sheet)",
+          "bbox": [
+            0,
+            0,
+            640,
+            315
+          ]
+        }
+      ]
+    },
+    "resin_oblique": {
+      "scene": "resin_oblique",
+      "model": "qwen3-vl-4b",
+      "infer_sec_vqa": 13.043,
+      "infer_sec_grounding": 12.918,
+      "response": "1. No, there is no transparent glass plate visible.  \n2. No, there is no transparent plastic or resin sheet visible.  \n3. No transparent objects are visible in the image.",
+      "grounding_raw": "[{\"label\": \"transparent object\", \"bbox\": [362, 236, 807, 645]}]",
+      "boxes": [
+        {
+          "label": "transparent object",
+          "bbox": [
+            231,
+            113,
+            516,
+            309
+          ]
+        }
+      ]
+    }
+  }
+}

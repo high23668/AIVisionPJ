@@ -1,0 +1,19 @@
+{
+  "scene": "glass_oblique",
+  "model": "qwen3-vl-4b",
+  "infer_sec_vqa": 14.141,
+  "infer_sec_grounding": 13.526,
+  "response": "1. Yes, there is a transparent glass plate visible, standing upright on the floor.  \n2. No, there is no transparent plastic or resin sheet visible.  \n3. The only transparent objects visible are the glass plate and its two small, clear supports.",
+  "grounding_raw": "[{\"label\": \"transparent objects (glass plate or plastic sheet)\", \"bbox\": [375, 426, 717, 975]}]",
+  "boxes": [
+    {
+      "label": "transparent objects (glass plate or plastic sheet)",
+      "bbox": [
+        240,
+        204,
+        458,
+        468
+      ]
+    }
+  ]
+}

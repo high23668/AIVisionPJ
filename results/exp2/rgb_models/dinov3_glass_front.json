@@ -1,0 +1,10 @@
+{
+  "scene": "glass_front",
+  "model": "dinov3-vitl",
+  "infer_sec": 0.147,
+  "pca_explained_ratio": [
+    0.19,
+    0.083,
+    0.077
+  ]
+}

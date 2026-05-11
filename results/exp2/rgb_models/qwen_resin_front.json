@@ -1,0 +1,19 @@
+{
+  "scene": "resin_front",
+  "model": "qwen3-vl-4b",
+  "infer_sec_vqa": 14.635,
+  "infer_sec_grounding": 13.225,
+  "response": "1. Yes, a transparent glass plate is visible, showing reflections and a blurred background.  \n2. No, there is no transparent plastic or resin sheet visible.  \n3. The only transparent object visible is a glass plate, which reflects light and shows a blurred background.",
+  "grounding_raw": "[{\"label\": \"transparent objects (glass plate or plastic sheet)\", \"bbox\": [0, 0, 1000, 658]}]",
+  "boxes": [
+    {
+      "label": "transparent objects (glass plate or plastic sheet)",
+      "bbox": [
+        0,
+        0,
+        640,
+        315
+      ]
+    }
+  ]
+}

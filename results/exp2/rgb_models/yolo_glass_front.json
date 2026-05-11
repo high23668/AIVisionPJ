@@ -1,0 +1,7 @@
+{
+  "scene": "glass_front",
+  "model": "yolo26l",
+  "infer_sec": 0.731,
+  "n_detections": 0,
+  "detections": []
+}

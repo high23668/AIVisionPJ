@@ -1,0 +1,10 @@
+{
+  "scene": "resin_front",
+  "model": "dinov3-vitl",
+  "infer_sec": 0.018,
+  "pca_explained_ratio": [
+    0.232,
+    0.115,
+    0.073
+  ]
+}

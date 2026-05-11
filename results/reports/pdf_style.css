@@ -1,0 +1,92 @@
+/* PDF変換用スタイルシート
+   VSCode Markdown PDF 拡張 / pandoc --css で使用 */
+
+body {
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic Pro", Meiryo, sans-serif;
+  font-size: 10.5pt;
+  line-height: 1.7;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  color: #1a1a1a;
+}
+
+/* ページ余白 */
+@page {
+  margin: 20mm 22mm 20mm 22mm;
+}
+
+/* 見出し */
+h1 { font-size: 18pt; border-bottom: 2px solid #2c5f8a; padding-bottom: 6px; }
+h2 { font-size: 13pt; border-bottom: 1px solid #aac4de; padding-bottom: 4px; margin-top: 2em; }
+h3 { font-size: 11.5pt; margin-top: 1.5em; }
+
+/* テーブル：右端切れ防止 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;        /* 列幅を固定 */
+  word-wrap: break-word;      /* 長い語を折り返す */
+  font-size: 9.5pt;
+  margin: 1em 0;
+}
+th {
+  background: #2c5f8a;
+  color: white;
+  padding: 5px 8px;
+  text-align: left;
+}
+td {
+  border: 1px solid #ccc;
+  padding: 4px 8px;
+  vertical-align: top;
+  word-break: break-word;
+}
+tr:nth-child(even) td { background: #f5f8fb; }
+
+/* コードブロック：右端切れ防止 */
+pre {
+  background: #f4f4f4;
+  padding: 10px 12px;
+  border-radius: 4px;
+  font-size: 8.5pt;
+  white-space: pre-wrap;      /* 折り返す */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  border-left: 3px solid #2c5f8a;
+}
+code {
+  font-family: "Courier New", "Noto Sans Mono", monospace;
+  font-size: 9pt;
+  background: #f0f0f0;
+  padding: 1px 4px;
+  border-radius: 3px;
+}
+pre code {
+  background: none;
+  padding: 0;
+}
+
+/* 画像 */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0.5em auto;
+}
+
+/* キャプション（イタリック） */
+em { color: #555; }
+
+/* ページ区切り防止 */
+h2, h3 { page-break-after: avoid; }
+table { page-break-inside: avoid; }
+
+/* blockquote（注記） */
+blockquote {
+  border-left: 4px solid #f0a500;
+  background: #fffbf0;
+  padding: 8px 14px;
+  margin: 1em 0;
+  font-size: 9.5pt;
+}

@@ -1,0 +1,10 @@
+{
+  "scene": "glass_oblique",
+  "model": "dinov3-vitl",
+  "infer_sec": 0.018,
+  "pca_explained_ratio": [
+    0.193,
+    0.083,
+    0.079
+  ]
+}

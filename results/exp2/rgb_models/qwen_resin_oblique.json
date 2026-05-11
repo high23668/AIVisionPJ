@@ -1,0 +1,19 @@
+{
+  "scene": "resin_oblique",
+  "model": "qwen3-vl-4b",
+  "infer_sec_vqa": 13.043,
+  "infer_sec_grounding": 12.918,
+  "response": "1. No, there is no transparent glass plate visible.  \n2. No, there is no transparent plastic or resin sheet visible.  \n3. No transparent objects are visible in the image.",
+  "grounding_raw": "[{\"label\": \"transparent object\", \"bbox\": [362, 236, 807, 645]}]",
+  "boxes": [
+    {
+      "label": "transparent object",
+      "bbox": [
+        231,
+        113,
+        516,
+        309
+      ]
+    }
+  ]
+}

@@ -34,6 +34,49 @@ __pycache__/
 # Results subdirectories (large image/depth data)
 results/*/
 
+# --- 例外: レポートと参照画像 ---
+# reports ディレクトリは全ファイルを追跡（MD・PNG・CSS のみ、小ファイル）
+!results/reports/
+!results/reports/**
+
+# 3glass: トップレベルの可視化画像のみ（サブディレクトリの大容量デバッグPNGは除外維持）
+!results/3glass/
+!results/3glass/*.jpg
+!results/3glass/*.png
+# 3glass サブディレクトリは再除外（any6d_*/refine/ 等の大容量PNG）
+results/3glass/*/
+!results/3glass/asgrasp_simple/
+!results/3glass/asgrasp_simple/grasps_overlay.jpg
+!results/3glass/asgrasp_complex/
+!results/3glass/asgrasp_complex/grasps_overlay.jpg
+
+# exp2: 可視化専用ディレクトリ（*.jpg のみ、npy/mp4/json等は除外）
+!results/exp2/
+!results/exp2/depth/
+!results/exp2/depth/*.jpg
+!results/exp2/rgb_models/
+!results/exp2/rgb_models/*.jpg
+!results/exp2/rgb_models/asgrasp_glass_front/
+!results/exp2/rgb_models/asgrasp_glass_front/grasps_overlay.jpg
+!results/exp2/rgb_models/asgrasp_glass_oblique/
+!results/exp2/rgb_models/asgrasp_glass_oblique/grasps_overlay.jpg
+!results/exp2/rgb_models/asgrasp_resin_front/
+!results/exp2/rgb_models/asgrasp_resin_front/grasps_overlay.jpg
+!results/exp2/rgb_models/asgrasp_resin_oblique/
+!results/exp2/rgb_models/asgrasp_resin_oblique/grasps_overlay.jpg
+# exp2/rgb_models のその他サブディレクトリは再除外（boxer_debug 等）
+results/exp2/rgb_models/boxer_debug/
+results/exp2/rgb_models/boxer_debug_glass_front/
+!results/exp2/any6d/
+!results/exp2/any6d/*.jpg
+# exp2/any6d サブディレクトリは再除外（refine/ 等の大容量PNG）
+results/exp2/any6d/*/
+!results/exp2/foundationpose/
+!results/exp2/foundationpose/*.jpg
+# exp2/foundationpose サブディレクトリは再除外（debug_* 等）
+results/exp2/foundationpose/*/
+# --------------------------------
+
 # Training runs (YOLO output)
 runs/
 

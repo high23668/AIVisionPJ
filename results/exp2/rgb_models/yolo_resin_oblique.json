@@ -1,0 +1,7 @@
+{
+  "scene": "resin_oblique",
+  "model": "yolo26l",
+  "infer_sec": 0.038,
+  "n_detections": 0,
+  "detections": []
+}
