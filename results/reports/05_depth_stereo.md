@@ -1,9 +1,9 @@
 # ステレオ深度推定 技術調査・実験報告
 ## Foundation-Stereo（NVIDIA）
 
-**文書番号**: RD-2026-006  
+**文書番号**: PDX-RB20260504-006  
 **作成日**: 2026-05-04  
-**対象読者**: 研究開発部門・技術部門（AI・画像認識の事前知識不要）  
+**作成者**: 室屋  
 **論文**: [arxiv 2501.09898](https://arxiv.org/abs/2501.09898) / [GitHub](https://github.com/NVlabs/FoundationStereo)  
 **関連文書**: [概観レポート](00_overview.md) / [前レポート: 単眼深度推定](04_depth_mono.md)
 
